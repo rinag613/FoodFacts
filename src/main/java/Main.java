@@ -1,5 +1,9 @@
 public class Main {
     public static void main(String[] args) {
-        FoodFrame foodFrame = new FoodFrame();
+        FoodComponent foodComponent = DaggerFoodComponent
+                .builder()
+                .build();
+        FoodFrame frame = foodComponent.providesFoodFrame();
+        frame.setVisible(true);
     }
 }

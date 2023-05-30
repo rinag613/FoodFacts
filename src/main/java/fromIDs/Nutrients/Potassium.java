@@ -1,4 +1,4 @@
-package Nutrients;
+package fromIDs.Nutrients;
 
 import javax.annotation.processing.Generated;
 import com.google.gson.annotations.Expose;

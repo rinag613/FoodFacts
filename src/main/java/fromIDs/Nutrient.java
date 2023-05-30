@@ -1,3 +1,5 @@
+package fromIDs;
+
 import javax.annotation.processing.Generated;
 
 import com.google.gson.annotations.Expose;

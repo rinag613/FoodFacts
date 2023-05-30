@@ -1,5 +1,5 @@
 public class TotalValue {
-    String name = "";
+    String name;
      Double  amount=0.0;
     public TotalValue(String name, Double newAmount){
         this.name = name;

@@ -23,7 +23,7 @@ public class Food {
     @Expose
     private String description;
     @Expose
-    private Double fdcId;
+    private Long fdcId;
     @Expose
     private List<Object> finalFoodInputFoods;
     @Expose
@@ -109,11 +109,11 @@ public class Food {
         this.description = description;
     }
 
-    public Double getFdcId() {
+    public Long getFdcId() {
         return fdcId;
     }
 
-    public void setFdcId(Double fdcId) {
+    public void setFdcId(Long fdcId) {
         this.fdcId = fdcId;
     }
 

@@ -1,7 +1,9 @@
+package fromIDs;
+
 import javax.annotation.processing.Generated;
 
-import Nutrients.*;
 import com.google.gson.annotations.Expose;
+import fromIDs.Nutrients.*;
 
 @Generated("net.hexar.json2pojo")
 @SuppressWarnings("unused")

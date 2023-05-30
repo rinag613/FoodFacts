@@ -1,11 +1,11 @@
-package Nutrients;
+package fromIDs.Nutrients;
 
 import javax.annotation.processing.Generated;
 import com.google.gson.annotations.Expose;
 
 @Generated("net.hexar.json2pojo")
 @SuppressWarnings("unused")
-public class Fat {
+public class TransFat {
 
     @Expose
     private Double value;

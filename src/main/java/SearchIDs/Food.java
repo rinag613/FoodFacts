@@ -1,17 +1,21 @@
+
+package SearchIDs;
+
 import java.util.List;
 import javax.annotation.processing.Generated;
+
 import com.google.gson.annotations.Expose;
 
 @Generated("net.hexar.json2pojo")
 @SuppressWarnings("unused")
-public class FoodCollection {
+public class Food {
 
     @Expose
-    private String availableDate;
+    private String allHighlightFields;
+    @Expose
+    private String brandName;
     @Expose
     private String brandOwner;
-    @Expose
-    private String brandedFoodCategory;
     @Expose
     private String dataSource;
     @Expose
@@ -19,46 +23,58 @@ public class FoodCollection {
     @Expose
     private String description;
     @Expose
-    private String discontinuedDate;
-    @Expose
     private Double fdcId;
+    @Expose
+    private List<Object> finalFoodInputFoods;
+    @Expose
+    private List<Object> foodAttributeTypes;
     @Expose
     private List<Object> foodAttributes;
     @Expose
-    private String foodClass;
+    private String foodCategory;
     @Expose
-    private List<Object> foodComponents;
+    private List<Object> foodMeasures;
     @Expose
     private List<FoodNutrient> foodNutrients;
     @Expose
-    private List<Object> foodPortions;
-    @Expose
-    private List<FoodUpdateLog> foodUpdateLog;
+    private List<Object> foodVersionIds;
     @Expose
     private String gtinUpc;
     @Expose
-    private String householdServingFullText;
-    @Expose
     private String ingredients;
-    @Expose
-    private LabelNutrients labelNutrients;
     @Expose
     private String marketCountry;
     @Expose
+    private List<Object> microbes;
+    @Expose
     private String modifiedDate;
     @Expose
-    private String publicationDate;
+    private String packageWeight;
+    @Expose
+    private String publishedDate;
+    @Expose
+    private Double score;
     @Expose
     private Double servingSize;
     @Expose
     private String servingSizeUnit;
+    @Expose
+    private List<String> tradeChannels;
 
-    public String getAvailableDate() {
-        return availableDate;
+    public String getAllHighlightFields() {
+        return allHighlightFields;
     }
 
-    public void setAvailableDate(String availableDate) {
-        this.availableDate = availableDate;
+    public void setAllHighlightFields(String allHighlightFields) {
+        this.allHighlightFields = allHighlightFields;
+    }
+
+    public String getBrandName() {
+        return brandName;
+    }
+
+    public void setBrandName(String brandName) {
+        this.brandName = brandName;
     }
 
     public String getBrandOwner() {
@@ -67,14 +83,6 @@ public class FoodCollection {
 
     public void setBrandOwner(String brandOwner) {
         this.brandOwner = brandOwner;
-    }
-
-    public String getBrandedFoodCategory() {
-        return brandedFoodCategory;
-    }
-
-    public void setBrandedFoodCategory(String brandedFoodCategory) {
-        this.brandedFoodCategory = brandedFoodCategory;
     }
 
     public String getDataSource() {
@@ -101,20 +109,28 @@ public class FoodCollection {
         this.description = description;
     }
 
-    public String getDiscontinuedDate() {
-        return discontinuedDate;
-    }
-
-    public void setDiscontinuedDate(String discontinuedDate) {
-        this.discontinuedDate = discontinuedDate;
-    }
-
     public Double getFdcId() {
         return fdcId;
     }
 
     public void setFdcId(Double fdcId) {
         this.fdcId = fdcId;
+    }
+
+    public List<Object> getFinalFoodInputFoods() {
+        return finalFoodInputFoods;
+    }
+
+    public void setFinalFoodInputFoods(List<Object> finalFoodInputFoods) {
+        this.finalFoodInputFoods = finalFoodInputFoods;
+    }
+
+    public List<Object> getFoodAttributeTypes() {
+        return foodAttributeTypes;
+    }
+
+    public void setFoodAttributeTypes(List<Object> foodAttributeTypes) {
+        this.foodAttributeTypes = foodAttributeTypes;
     }
 
     public List<Object> getFoodAttributes() {
@@ -125,20 +141,20 @@ public class FoodCollection {
         this.foodAttributes = foodAttributes;
     }
 
-    public String getFoodClass() {
-        return foodClass;
+    public String getFoodCategory() {
+        return foodCategory;
     }
 
-    public void setFoodClass(String foodClass) {
-        this.foodClass = foodClass;
+    public void setFoodCategory(String foodCategory) {
+        this.foodCategory = foodCategory;
     }
 
-    public List<Object> getFoodComponents() {
-        return foodComponents;
+    public List<Object> getFoodMeasures() {
+        return foodMeasures;
     }
 
-    public void setFoodComponents(List<Object> foodComponents) {
-        this.foodComponents = foodComponents;
+    public void setFoodMeasures(List<Object> foodMeasures) {
+        this.foodMeasures = foodMeasures;
     }
 
     public List<FoodNutrient> getFoodNutrients() {
@@ -149,20 +165,12 @@ public class FoodCollection {
         this.foodNutrients = foodNutrients;
     }
 
-    public List<Object> getFoodPortions() {
-        return foodPortions;
+    public List<Object> getFoodVersionIds() {
+        return foodVersionIds;
     }
 
-    public void setFoodPortions(List<Object> foodPortions) {
-        this.foodPortions = foodPortions;
-    }
-
-    public List<FoodUpdateLog> getFoodUpdateLog() {
-        return foodUpdateLog;
-    }
-
-    public void setFoodUpdateLog(List<FoodUpdateLog> foodUpdateLog) {
-        this.foodUpdateLog = foodUpdateLog;
+    public void setFoodVersionIds(List<Object> foodVersionIds) {
+        this.foodVersionIds = foodVersionIds;
     }
 
     public String getGtinUpc() {
@@ -173,28 +181,12 @@ public class FoodCollection {
         this.gtinUpc = gtinUpc;
     }
 
-    public String getHouseholdServingFullText() {
-        return householdServingFullText;
-    }
-
-    public void setHouseholdServingFullText(String householdServingFullText) {
-        this.householdServingFullText = householdServingFullText;
-    }
-
     public String getIngredients() {
         return ingredients;
     }
 
     public void setIngredients(String ingredients) {
         this.ingredients = ingredients;
-    }
-
-    public LabelNutrients getLabelNutrients() {
-        return labelNutrients;
-    }
-
-    public void setLabelNutrients(LabelNutrients labelNutrients) {
-        this.labelNutrients = labelNutrients;
     }
 
     public String getMarketCountry() {
@@ -205,6 +197,14 @@ public class FoodCollection {
         this.marketCountry = marketCountry;
     }
 
+    public List<Object> getMicrobes() {
+        return microbes;
+    }
+
+    public void setMicrobes(List<Object> microbes) {
+        this.microbes = microbes;
+    }
+
     public String getModifiedDate() {
         return modifiedDate;
     }
@@ -213,12 +213,28 @@ public class FoodCollection {
         this.modifiedDate = modifiedDate;
     }
 
-    public String getPublicationDate() {
-        return publicationDate;
+    public String getPackageWeight() {
+        return packageWeight;
     }
 
-    public void setPublicationDate(String publicationDate) {
-        this.publicationDate = publicationDate;
+    public void setPackageWeight(String packageWeight) {
+        this.packageWeight = packageWeight;
+    }
+
+    public String getPublishedDate() {
+        return publishedDate;
+    }
+
+    public void setPublishedDate(String publishedDate) {
+        this.publishedDate = publishedDate;
+    }
+
+    public Double getScore() {
+        return score;
+    }
+
+    public void setScore(Double score) {
+        this.score = score;
     }
 
     public Double getServingSize() {
@@ -235,6 +251,14 @@ public class FoodCollection {
 
     public void setServingSizeUnit(String servingSizeUnit) {
         this.servingSizeUnit = servingSizeUnit;
+    }
+
+    public List<String> getTradeChannels() {
+        return tradeChannels;
+    }
+
+    public void setTradeChannels(List<String> tradeChannels) {
+        this.tradeChannels = tradeChannels;
     }
 
 }
